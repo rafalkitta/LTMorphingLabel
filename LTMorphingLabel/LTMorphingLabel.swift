@@ -155,6 +155,10 @@ typealias LTMorphingSkipFramesClosure =
         }
     }
     
+    open func setTextWithoutMorphing(text: String) {
+        super.text = text
+    }
+    
     open var textAttributes: [NSAttributedStringKey: Any]? {
         didSet {
             setNeedsLayout()

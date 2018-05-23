@@ -32,6 +32,7 @@ class LTDemoViewController : UIViewController, LTMorphingLabelDelegate {
         super.viewDidLoad()
         
         label.delegate = self
+        label.setTextWithoutMorphing(text: "I'm LTMorphingLabel. Tap Me Please.")
     }
 
     @IBOutlet fileprivate var label: LTMorphingLabel!
